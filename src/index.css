@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  :root {
+    -alkali: #eace5d;
+    --alkaline: hsl(60deg, 83%, 67%);
+    --lanthanoid: hsl(42deg, 62%, 76%);
+    --actinoid: hsl(340deg, 67%, 88%);
+    --transition: hsl(12deg, 87%, 85%);
+    --poor: hsl(192deg, 62%, 80%);
+    --metalloid: hsl(165deg, 58%, 76%);
+    --nonmetal: hsl(120deg, 73%, 74%);
+  }
+} */
+
+.elementShadow {
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12),
+    0 1px 2px rgba(255, 255, 255, 0.24), inset 0 1px 3px rgba(0, 0, 0, 0.12),
+    inset 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.infoList > li {
+  font-size: 14px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.infoList > li:last-child {
+  border-bottom: none;
+}
+
+.infoList > li span:nth-child(2) {
+  padding-left: 10px;
+}
+
+.activeElement {
+  /* border-color: rgb(2, 118, 253) !important; */
+  outline: 2px solid rgb(2, 118, 253);
+}
+
+.state-of-matter > li {
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  line-height: 1;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.series > li {
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  /* background-color: transparent; */
+}
+
+.vertical-writing {
+  writing-mode: vertical-rl;
+  padding-top: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.col-start-10 {
+  grid-column-start: 10;
+}
+.col-start-11 {
+  grid-column-start: 11;
+}
+.col-start-12 {
+  grid-column-start: 12;
+}
+
+.col-start-13 {
+  grid-column-start: 13;
+}
+
+.col-start-14 {
+  grid-column-start: 14;
+}
+
+.col-start-15 {
+  grid-column-start: 15;
+}
+
+.col-start-16 {
+  grid-column-start: 16;
+}
+.col-start-17 {
+  grid-column-start: 17;
+}
+
+.active-state-Solid {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+.active-state-Liquid {
+  background-color: #00d !important;
+  color: #fff !important;
+}
+.active-state-Gas {
+  background-color: #900 !important;
+  color: #fff !important;
+}
+.active-state-Unknown {
+  background-color: #676 !important;
+  color: #fff !important;
+}
