@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import audio from '../assets/speech';
 
 const Element = ({
   element,
@@ -49,9 +50,8 @@ const Element = ({
 
   const handleClick = () => {
     handleChangeActiveElm(element.atomicNumber);
-    const audio = new Audio(`./src/assets/speech/${element.name}.mp3`);
-    console.log(audio);
-    if (audio) audio.play();
+    const speech = new Audio(audio[element.name]);
+    if (speech) speech.play();
     setClick(true);
   };
   const handleMouseEnter = () => {
